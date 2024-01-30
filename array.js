@@ -157,6 +157,41 @@
 //    let a = 10
 //    console.log(a)
 
+// let a =10;
+// let b = "10";
+// console.log(a===b)
+
+
+// let myArray = ["aman","devanshu",89,78]
+
+// for(let index in myArray){
+    //     let value = myArray[index]
+    //     console.log(value)
+    // }
+    
+    
+    // for(let i =0; i<=5; i++){
+    //     console.log(i)
+    // }
+
+    // let i =0;
+
+    // while(i<10){
+    //     i++
+    //     if(i==4){
+    //         continue
+    //     }
+    //     console.log(i)
+       
+    // }
+
+
+    
+
+
+
+
+
 
 
 

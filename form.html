@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="/dom.html" onsubmit=" return myForm() ">
+        <label for="">First Name </label>
+        <input type="text" name="" id="f1" ><span id="error"></span> <br><br>
+        
+
+        <span id="passerror"></span>
+        <label for="">Password</label>
+        <input type="text" name="" id="pass"><br><br>
+        <label for="">Confirm Password</label>
+        <input type="text" name="" id="confirmPass"><br><br>
+        <br><br>
+        <input type="submit" value="Submit Form">
+    </form>
+
+
+    <script>
+        function myForm(){
+           let a = document.getElementById('f1').value
+           if(a==""){
+            document.getElementById('error').innerText="Please fill this field"
+            return false
+           }
+
+        if(a.trim()==""){
+            document.getElementById('error').innerText="Dont use space"
+            return false
+           }
+
+        if(a.length<5){
+            document.getElementById('error').innerText = "First name should be grater than 5"
+            return false
+        }   
+
+        let password = document.getElementById('pass').value
+
+        let confirmPass = document.getElementById('confirmPass').value
+        
+        if(password.length<8){
+            document.getElementById("passerror").innerText = "Password should be grate than 8"
+            return false
+        }
+        if(password!==confirmPass){
+            document.getElementById("passerror").innerText="Password not match"
+            return false
+        }
+
+          
+           
+        }
+        
+    </script>
+
+</body>
+</html>
