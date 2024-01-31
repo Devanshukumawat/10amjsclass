@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <button onclick="incFun()">+</button>
+    <p id="output">0</p>
+    <button onclick="decFun()">-</button>
+
+
+    <script>
+        let value  = 0
+        function incFun(){
+            value++
+            document.getElementById('output').innerHTML=value
+        }
+
+        function decFun(){
+            value--
+            document.getElementById('output').innerHTML=value
+        }
+
+        
+
+
+
+    </script>
+
+</body>
+</html>
