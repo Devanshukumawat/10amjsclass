@@ -10,7 +10,7 @@
 
     <button onclick="incFun()">+</button>
     <p id="output">0</p>
-    <button onclick="decFun()">-</button>
+    <button onclick="decFun()" id="decbtn">-</button>
 
 
     <script>
@@ -21,7 +21,10 @@
         }
 
         function decFun(){
-            value--
+            if(value!==0){
+                value--
+            }
+            
             document.getElementById('output').innerHTML=value
         }
 

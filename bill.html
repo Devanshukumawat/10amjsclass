@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="output"></h1>
+
+    <button onclick="myFn()">Print bill</button>
+    
+
+
+    <script>
+        let item = prompt("Enter item :- ")
+let price = prompt("Enter price :- ")
+let quantity = prompt("Enter item quantity :- ")
+
+let discount = 20
+let gst = 10
+
+bill = price*quantity
+ bill_discount = bill*discount/100
+ total_bill = bill-bill_discount
+ bill_gst = total_bill*gst/100
+ final_bill = total_bill+bill_gst
+
+console.log("Item :- "+item)
+console.log("Price :- "+price)
+console.log("Quantity :- "+quantity)
+console.log("Bill :- "+bill)
+console.log("Discount :- "+bill_discount)
+console.log("Total-Bill :- "+total_bill)
+console.log("Gst :- "+bill_gst)
+console.log("Final-Bill :- "+final_bill)
+// console.log(`You have to pay ${final_bill} \u20B9 for ${quantity}-${item} `)
+
+console.log(`You have to pay ${final_bill} \u20B9 for ${quantity}-${item} `)
+
+document.getElementById('output').innerHTML = "Item :- "+item +"</br>"+"Price :- "+price+"</br>"+"Quantity :- "+quantity+"</br>"+"Bill :- "+bill+"</br>"+"Discount :- "+bill_discount+"</br>"+"Total-Bill :- "+total_bill+"</br>"+"Gst :- "+bill_gst+"</br>"+"Final-Bill :- "+final_bill+"</br>"+`You have to pay ${final_bill} \u20B9 for ${quantity}-${item} `
+
+
+function myFn(){
+    window.print()
+}
+
+    </script>
+</body>
+</html>
