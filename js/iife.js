@@ -31,7 +31,14 @@
 // console.log(a)
 // console.log(b)
 
+ let hello  =  (function add(){
+    var a = 10
+    var b = 10
+    console.log(a)
+    return b
+})()
 
+console.log(hello)
 
 
 
