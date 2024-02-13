@@ -7,6 +7,8 @@
 // fetch("hhtp://dummydata.js").then().catch().finally()
 
 
+
+
 // let myPromise = new Promise((resolve,reject)=>{
 //     setTimeout(()=>{
 //         console.log("Async task complete")
@@ -47,6 +49,90 @@
 // }).finally(()=>{
 //     console.log("Finally always run")
 // })
+
+
+// new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         console.log("Async task complete")
+
+//         let task = false
+
+//         if(task){
+//             resolve({
+//                 name:"Devanshu",
+//                 age:67,
+//                 id:"7hu78"
+//             })
+//         }
+//         else{
+//             reject("Error....!")
+//         }
+
+        
+//     },2000)
+
+// }).then((data)=>{
+//     console.log(data)
+// }).catch((myError)=>{
+//     console.log(myError)
+// }).finally(()=>{
+//     console.log("Finally always run")
+// })
+
+// let myPromise = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         console.log("Async task complete")
+
+//         let task = false
+
+//         if(task){
+//             resolve({
+//                 name:"Devanshu",
+//                 age:67,
+//                 id:"7hu78"
+//             })
+//         }
+//         else{
+//             reject("Error....!")
+//         }
+
+        
+//     },2000)
+
+// })
+
+// async function Data(){
+
+//     try {
+
+//         let result = await myPromise
+//     console.log(result)
+        
+//     } catch (myError) {
+//         console.log(myError)
+//     }
+
+    
+// }
+
+// Data()
+
+// async function myData(){
+//     let result = await fetch("https://dummyjson.com/products/")
+//     let data = await result.json()
+//     console.log(data)
+// }
+
+// myData()
+
+
+fetch("https://dummyjson.com/products/").then((data)=>{
+    return data.json()
+}).then((result)=>{
+    console.log(result)
+}).catch((erroe)=>{
+    console.log(erroe)
+})
 
 
 
