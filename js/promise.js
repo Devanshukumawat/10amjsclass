@@ -118,21 +118,27 @@
 // Data()
 
 // async function myData(){
-//     let result = await fetch("https://dummyjson.com/products/")
-//     let data = await result.json()
-//     console.log(data)
+
+//     try {
+//         let result = await fetch("https://dummyjson.com/products/")
+//         let data = await result.json()
+//         console.log(data)
+//     } catch (error) {
+//         console.log(error)
+//     }
+   
 // }
 
 // myData()
 
 
-fetch("https://dummyjson.com/products/").then((data)=>{
-    return data.json()
-}).then((result)=>{
-    console.log(result)
-}).catch((erroe)=>{
-    console.log(erroe)
-})
+// fetch("https://dummyjson.com/products/").then((data)=>{
+//     return data.json()
+// }).then((result)=>{
+//     console.log(result)
+// }).catch((erroe)=>{
+//     console.log(erroe)
+// })
 
 
 
