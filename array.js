@@ -186,7 +186,60 @@
     // }
 
 
+    // const myArray = [10,20,30,40,50]
+
+    // for(let i = 0; i<myArray.length; i++){
+    //     console.log(myArray[i])
+    // }
+
+    // console.log(myFn())
+
+    // function myFn(){
+    //     return "HEllo world"
+    // }
+
+    // let num = 0
+
+    // if(num>0){
+    //     console.log("Number is positive")
+    // }
+    // else if(num<0){
+    //     console.log("Number is negative")
+    // }
+    // else if(num==0){
+    //     console.log("Number is zero")
+    // }
+    // else{
+    //     console.log("Invalid number")
+    // }
+
+
+    // function myFn(){
+    //     setTimeout(()=>{
+    //         console.log(x)
+    //         console.log(y)
+    //     },3000)
+
+    //     var x = 2;
+    //     let y = 12;
+    // }
+
+    // myFn()
+
+
+    // function myFn(){
+    //     setTimeout(()=>{console.log(1)},2000)
+    //     console.log(2);
+    //     setTimeout(()=>{console.log(3)},0)
+    //     console.log(4)
+    // }
+
+    // myFn()
+
     
+
+
+
 
 
 

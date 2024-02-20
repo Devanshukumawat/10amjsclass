@@ -7,7 +7,7 @@
 </head>
 <body>
     
-
+    <h1 id="goal"></h1>
     <button onclick="incFun()">+</button>
     <p id="output">0</p>
     <button onclick="decFun()" id="decbtn">-</button>
@@ -21,8 +21,10 @@
         }
 
         function decFun(){
-            if(value!==0){
-                value--
+            value--
+            if(value==10){
+               document.getElementById('goal').innerText= "Yaahoo you acchive the goal" 
+
             }
             
             document.getElementById('output').innerHTML=value

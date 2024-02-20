@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .Navbar {
+  background-color: rebeccapurple;
+  display: flex;
+  padding: 16px;
+  color: white;
+}
+
+Link {
+  padding-right: 8px;
+}
+
+.Navbar__Items {
+  display: flex;
+}
+
+.Navbar__Items--right {
+  margin-left:auto;
+}
+
+.Navbar__Link-toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .Navbar__Items,
+  .Navbar {
+    flex-direction: column;
+  }
+    
+.Navbar__Items {
+    display:none;
+  }
+    
+.Navbar__Items--right {
+    margin-left:0;
+  }
+    
+.Navbar__Toggle {
+    display: flex;
+  }
+    
+.Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+   } 
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="Navbar">
+    <div class="Navbar__Link Navbar__Link-toggle">
+      <button>DRop</button>
+    </div>
+  <nav class="Navbar__Items">
+    <div class="Link">
+      Home
+    </div>
+    <div class="Link">
+      Contact
+    </div>
+    <div class="Link">
+      About us
+    </div>
+  </nav>
+</div>
+
+<script>
+    function MyToggle() {
+  const navs = document.querySelectorAll('.Navbar__Items')
+  
+  navs.forEach((nav) =>{ nav.classList.toggle('Navbar__Toggle')});
+}
+
+
+
+document.querySelector('.Navbar__Link-toggle')
+  .addEventListener('click', MyToggle);
+</script>
+
+</body>
+
+</html>
